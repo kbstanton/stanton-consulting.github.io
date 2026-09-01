@@ -1,1 +1,1 @@
-The website, which is under construction (obviously), of Stanton Consulting LLC
+This website contains public information about Stanton Consulting LLC.
