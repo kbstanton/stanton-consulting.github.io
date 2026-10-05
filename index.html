@@ -74,40 +74,24 @@
 
         .brand {
             display: inline-flex;
-            align-items: center;
-            gap: 14px;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 100%;
             text-decoration: none;
         }
 
-        .brand-mark {
-            width: 44px;
-            height: 44px;
-            display: grid;
-            place-items: center;
-            border-radius: 14px;
-            background: linear-gradient(135deg, var(--brand), #246d63);
-            color: #fff;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            box-shadow: 0 12px 30px rgba(24, 77, 71, 0.25);
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-name {
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+        .brand-logo {
+            display: block;
+            width: 340px;
+            max-width: 100%;
+            height: auto;
         }
 
         .brand-tag {
+            padding-left: 16px;
             color: var(--muted);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            line-height: 1.5;
         }
 
         .nav-link {
@@ -434,6 +418,14 @@
                 margin-bottom: 20px;
             }
 
+            .brand-logo {
+                width: 300px;
+            }
+
+            .brand-tag {
+                padding-left: 14px;
+            }
+
             .hero-copy p,
             .section-intro,
             .service-card p,
@@ -447,11 +439,14 @@
     <div class="page">
         <header class="nav">
             <a class="brand" href="#">
-                <span class="brand-mark">SC</span>
-                <span class="brand-text">
-                    <span class="brand-name">Stanton Consulting LLC</span>
-                    <span class="brand-tag">Precision timing and network systems</span>
-                </span>
+                <img
+                    class="brand-logo"
+                    src="Stanton%20Consulting%20LLC%20Logo%20202610.png"
+                    alt="Stanton Consulting LLC"
+                    width="2146"
+                    height="733"
+                >
+                <span class="brand-tag">Precision timing and network systems</span>
             </a>
             <a class="nav-link" href="#contact">Start a conversation</a>
         </header>
